@@ -1,0 +1,53 @@
+.Pages {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(116, 116, 252), rgb(255, 153, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pages img {
+    width: 600px;
+}
+
+.Pages h1 {
+    color: #00629B;
+    font-size: 60px;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: textAnimation 3s ease-in-out 1;
+}
+
+@keyframes textAnimation {
+    0% {
+        color: #00629B;
+        margin-top: -40px;
+        letter-spacing: 5px;
+        opacity: 0;
+    }
+    30% {
+        letter-spacing: 25px;
+        opacity: 1;
+    }
+    70% {
+        letter-spacing: 12px;
+        margin-top: 0px;
+    }
+    100% {
+        letter-spacing: 8px;
+        margin-top: 0px;
+    }
+}
+
+.Pages h2 {
+    color: #00629B;
+    font-size: 40px;
+}
+
+.Pages h3 {
+    color: #00629B;
+    font-size: 40px;
+}

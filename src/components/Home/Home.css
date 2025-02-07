@@ -1,0 +1,41 @@
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: url('../../assets/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-text{
+    padding: 15px;
+    max-width: 800px;
+    height: 300px;
+    background: #c4e7fd;
+    border-radius: 30px;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.home-text h1{
+    margin-left: 20px;
+    color: #4f76b4;
+}
+
+.home-text hr{
+    width: 60%;
+    height: 4px;
+    border: 0 none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: black;
+}
+
+.home-text p{
+    color: black;
+    font-size: 20px;
+}
+

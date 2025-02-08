@@ -31,7 +31,40 @@ const About = () => {
               nation's digital growth and innovation-driven economy</p>
           </div>
         </div>
-
+      </div>
+      {/* IEEE */}
+      <div className="Heading">
+        <h1>IEEE</h1>
+      </div>
+      <div className='IEEE'>
+        <div className="IEEELogoWrapper">
+          <div className='logoBG'>
+            <img src={logo} alt='' />
+          </div>
+        </div>
+        <div className='IEEE_Text'>
+          <p>
+            IEEE, or the Institute of Electrical and Electronics Engineers,
+            is a professional organization that promotes technological advancement.
+            It's the world's largest technical professional society
+          </p>
+        </div>
+      </div>
+      {/* Computer Society*/}
+      <div className="Heading">
+        <h1>IEEE Computer Society</h1>
+      </div>
+      <div className='IEEE_CS'>
+        <div className='IEEE_Text'>
+          <p>
+            IEEE Computer Society is a technical society of the Institute of Electrical and Electronics Engineers dedicated to computing, namely the major areas of hardware, software, standards and people, "advancing the theory, practice, and application of computer and information processing science and technology."
+          </p>
+        </div>
+        <div className="IEEELogoWrapper">
+          <div className='logoBG'>
+            <img src={cs} alt='' />
+          </div>
+        </div>
       </div>
     </section>
   )

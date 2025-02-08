@@ -7,18 +7,6 @@
     align-items: center;
 }
 
-.eventHeading {
-    text-align: center;
-    border-bottom: 5px solid #333;
-    height: 3.5rem;
-    box-sizing: border-box;
-    margin-bottom: 1em;
-}
-
-.eventHeading h1 {
-    font-size: 3rem;
-    color: #00629B;
-}
 
 /* Responsiveness */
 @media (max-width: 900px) {

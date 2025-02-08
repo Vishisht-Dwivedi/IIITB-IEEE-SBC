@@ -27,3 +27,17 @@ a {
   padding-left: 1%;
   padding-right: 1%;
 }
+
+.Heading {
+  text-align: center;
+  height: 3.5rem;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+}
+
+.Heading h1 {
+  display: inline;
+  font-size: 3rem;
+  color: #00629B;
+  border-bottom: 5px solid #333;
+}

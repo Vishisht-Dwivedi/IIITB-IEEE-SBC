@@ -1,0 +1,192 @@
+.Joins{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.join{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join button{
+    border: 0;
+    outline: 0;
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #fff;
+    background: orange;
+}
+
+.details{
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(91, 91, 255);
+}
+
+.detail{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    left: 0;
+    padding: 20px;
+    color: #fff;
+}
+
+.detail h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.media{
+    font-size: larger;
+    margin-bottom: 15px;
+}
+
+.media a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.map{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    padding-bottom: 40%;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    position: absolute;
+}
+
+.icon{
+    display: flex; 
+    gap: 15px;
+    align-items: center; 
+}
+
+.form{
+    position: absolute;
+    width: 45%;
+    right: 0;
+    top: 0;
+    height: auto;
+    padding: 20px;
+}
+
+.form h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+}
+.name{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin: 30px 0;
+    color: #fff;
+}
+
+.name input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+}
+
+.name input::placeholder,
+.msg textarea::placeholder {
+    color: white;
+    opacity: 1; 
+}
+
+
+.msg{
+    position: relative;
+    width: 100%;
+    height: 130px;
+}
+
+.msg textarea{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.form .btn{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 104, 34);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* 
+.insta{
+    font-size: larger;
+}
+
+.insta a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.location{
+    font-size: larger;
+}
+
+.location a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+} */
+

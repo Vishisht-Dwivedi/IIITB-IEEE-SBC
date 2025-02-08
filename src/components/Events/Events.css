@@ -1,17 +1,18 @@
 .Events {
-    height: 600px;
+    height: 500px;
     padding: 0 1em 1em;
-    margin: 0;
+    margin: 0 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 
 /* Responsiveness */
 @media (max-width: 900px) {
     .Events {
-        height: 500px;
+        height: 400px;
         font-size: 13px;
     }
 }

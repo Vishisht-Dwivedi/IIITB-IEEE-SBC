@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
-import Home from './components/home/home'
+import Home from './components/Home/Home'
 import About from './components/About/About'
 import Page from './components/Page/Page'
 import Events from './components/Events/Events'
@@ -11,16 +11,16 @@ import Join from './components/Join/Join'
 
 const App = () => {
   return (
-    <div>
-      <Page/>
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Events/>
-      <Teams/>
-      <Students/>
-      <Join/>
-    </div>
+    <main>
+      <Page />
+      <Navbar />
+      <Home />
+      <About />
+      <Events />
+      <Teams />
+      <Students />
+      <Join />
+    </main>
   )
 }
 

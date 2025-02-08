@@ -1,10 +1,28 @@
+/* Setting the entire section */
+.Abouts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About IIITB */
 .iiitb {
     background: url('../../assets/inog.jpg');
     background-size: cover;
     background-position: center;
-    position: relative;
+    background-repeat: no-repeat;
+    width: 75%;
+    max-height: 500px;
+    aspect-ratio: 16/9;
+    margin: 1rem 15%;
+    box-shadow: 10px 10px 15px 1px rgb(196, 196, 196);
+}
+
+.iiitb-wrapper {
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
+    backdrop-filter: blur(3px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,34 +30,43 @@
 }
 
 .iiitb img {
-    width: 200px;
+    width: 15%;
 }
 
 .label {
     width: 100%;
-    height: 50vh;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    padding: 2%;
+    margin: 2%;
+    font-size: 18px;
 }
 
-.label h1 {
-    color: #00629B;
-    font-size: 50px;
-    padding: 30px;
-    font-family: 'Playfair';
+@media (max-width: 1000px) {
+    .label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    .label {
+        font-size: 13px;
+    }
 }
 
 .label p {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    padding: 1%;
+    font-size: 1em;
     font-family: 'Playfair';
 }
 
+/* About IEEE */
 .ieee {
     width: 100%;
     min-height: 100vh;

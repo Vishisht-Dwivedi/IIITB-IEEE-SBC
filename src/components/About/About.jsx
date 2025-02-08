@@ -10,25 +10,35 @@ import inog from '../../assets/inog.jpg'
 
 const About = () => {
   return (
-    <div className='Abouts'>
-      <div className='iiitb'>
-        <img src={iiitb} alt='' />
-        <div className='label'>
-          <h1>IIIT BHOPAL</h1>
-          <p>Indian Institute of Information Technology Bhopal
-            is an Institute of National Importance, established in 2017 under
-            the Public-Private Partnership (PPP) model. It focuses on quality
-            education, research, and technological innovation. The institute
-            fosters a dynamic learning environment with industry collaborations
-            and cutting-edge infrastructure. Currently operating from MANIT Bhopal,
-            it aims to equip students with advanced technical knowledge and
-            problem-solving skills. With a strong emphasis on academic excellence
-            and practical learning, IIIT Bhopal prepares individuals for careers
-            in technology, entrepreneurship, and research, contributing to the
-            nation’s digital growth and innovation-driven economy</p>
-        </div>
+    <section className='Abouts'>
+      <div className="Heading">
+        <h1>About IIIT Bhopal</h1>
       </div>
-      <div className='ieee'>
+      <div className='iiitb'>
+        <div className="iiitb-wrapper">
+          <img src={iiitb} alt='' />
+          <div className='label'>
+            <p>Indian Institute of Information Technology Bhopal
+              is an Institute of National Importance, established in 2017 under
+              the Public-Private Partnership (PPP) model. It focuses on quality
+              education, research, and technological innovation. The institute
+              fosters a dynamic learning environment with industry collaborations
+              and cutting-edge infrastructure. Currently operating from MANIT Bhopal,
+              it aims to equip students with advanced technical knowledge and
+              problem-solving skills. With a strong emphasis on academic excellence
+              and practical learning, IIIT Bhopal prepares individuals for careers
+              in technology, entrepreneurship, and research, contributing to the
+              nation's digital growth and innovation-driven economy</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  )
+}
+
+export default About
+{/* <div className='ieee'>
         <div className='ie'>
           <img src={logo} alt='' />
         </div>
@@ -53,9 +63,4 @@ const About = () => {
         <div className='Q1'>
           <img src={cs} alt='' />
         </div>
-      </div>
-    </div>
-  )
-}
-
-export default About
+      </div> */}

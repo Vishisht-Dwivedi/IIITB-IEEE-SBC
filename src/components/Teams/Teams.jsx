@@ -6,7 +6,7 @@ import m3 from '../../assets/m3.jpg'
 
 const Teams = () => {
   return (
-    <div className='Teams'>
+    <section className='Teams'>
       <div className='team'>
         <h1>Meet the team</h1>
       </div>
@@ -15,17 +15,17 @@ const Teams = () => {
       </div>
       <div className='imgs'>
         <div className='img m1'>
-          <img src='m1' alt=''/>
+          <img src='m1' alt='' />
         </div>
         <div className='img m2'>
-        <img src='m1' alt=''/>
+          <img src='m1' alt='' />
         </div>
         <div className='img m3'>
-        <img src='m1' alt=''/>
+          <img src='m1' alt='' />
         </div>
       </div>
-    </div>
-    
+    </section>
+
   )
 }
 

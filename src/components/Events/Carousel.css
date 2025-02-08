@@ -1,0 +1,133 @@
+.eventCarousel {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 1em 0;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.eventCarousel img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: 800ms;
+    filter: blur(15px);
+}
+
+/* Small Slide */
+.SmallSlide {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    width: 30%;
+    aspect-ratio: 16/9;
+    background: teal;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.SmallSlide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    filter: blur(0);
+}
+
+.SmallSlide button {
+    all: unset;
+    width: 10%;
+    height: 100%;
+    background-color: rgba(245, 245, 245, 0.352);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SmallSlide button:hover {
+    background-color: rgba(245, 245, 245, 0.7);
+    cursor: pointer;
+}
+
+.SmallSlide button img {
+    all: unset;
+    width: 80%;
+}
+
+/* Event Description div */
+.eventDescription {
+    background-color: rgba(255, 255, 255, 0.548);
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    padding: 1em;
+    border-radius: 20px;
+    overflow: none;
+}
+
+.eventDescription h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #00629B;
+}
+
+.eventDescription p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Responsiveness */
+/* Phone */
+@media (max-width: 750px) {
+    .SmallSlide {
+        width: 60%;
+        height: 40%;
+        left: 20%;
+        right: 20%;
+        bottom: 2%;
+    }
+
+    .eventDescription {
+        width: 70%;
+        left: 15%;
+        right: 15%;
+        top: 5%;
+        bottom: 0;
+        height: 100%;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 900px) {
+    .SmallSlide {
+        width: 40%;
+        left: 30%;
+        right: 30%;
+        bottom: 2%;
+    }
+
+    .eventDescription {
+        width: 70%;
+        left: 15%;
+        right: 15%;
+        top: 5%;
+        bottom: 0;
+        height: 100%;
+        font-size: 13px;
+    }
+}

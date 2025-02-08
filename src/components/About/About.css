@@ -124,6 +124,7 @@
 .IEEE_CS,
 .IEEE {
     font-size: 14px;
+    margin: 2rem;
 }
 
 @media (max-width: 1000px) {

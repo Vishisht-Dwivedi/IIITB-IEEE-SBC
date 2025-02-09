@@ -1,5 +1,14 @@
 /* Setting the entire section */
-.Abouts {
+.AboutIIITB {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.AboutIEEE {
     display: flex;
     flex-direction: column;
     justify-content: center;

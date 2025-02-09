@@ -33,7 +33,7 @@ const About = () => {
 
   return (
     <>
-      <section className="Abouts">
+      <section className="AboutIIITB">
         <div className="Heading">
           <h1>About IIIT Bhopal</h1>
         </div>
@@ -60,7 +60,7 @@ const About = () => {
         </div>
       </section>
       {/* IEEE */}
-      <section className="Abouts">
+      <section className="AboutIEEE">
         <canvas ref={canvasRef} className='canvas' />
         <div className="Heading">
           <h1>IEEE</h1>

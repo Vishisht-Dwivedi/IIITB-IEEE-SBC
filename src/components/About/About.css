@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 /* About IIITB */
@@ -79,17 +81,15 @@
     display: grid;
     place-items: center;
     position: relative;
-    /* Ensures child elements are properly layered */
 }
 
-.IEEELogoWrapper canvas {
+canvas {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* Moves canvas behind the logo */
 }
 
 .IEEE img {
@@ -107,9 +107,6 @@
     justify-content: center;
     background: transparent;
     position: relative;
-    /* Keeps the logo above the canvas */
-    z-index: 1;
-    /* Ensures the logo is above the canvas */
 }
 
 .IEEE_Text {

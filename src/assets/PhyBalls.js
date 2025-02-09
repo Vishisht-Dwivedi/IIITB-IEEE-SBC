@@ -9,7 +9,7 @@ canvasArray.forEach((element) => {
     element.height = CANVAS_HEIGHT;
 
     const ctx = element.getContext('2d');
-    const colorArray = ["#B1F0F7", "#81BFDA", "#F5F0CD", "#FADA7A"];
+    const colorArray = ["#B1F0F7", "#81BFDA", "#F5F0CD", "#FADA7A", "#1d99cc"];
 
     function randomInRange(low, high) {
         let x = Math.random() * (low + high);
@@ -61,10 +61,10 @@ canvasArray.forEach((element) => {
 
     function init() {
         const circles = [];
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 10; i++) {
             let dx = 0;
             let dy = Math.random() + 0.1;
-            let radius = randomInRange(0.2 * CANVAS_WIDTH, 0.25 * CANVAS_WIDTH);
+            let radius = randomInRange(0.05 * CANVAS_WIDTH, 0.15 * CANVAS_WIDTH);
             let x = randomInRange(radius, CANVAS_WIDTH - radius);
             let y = 2 * radius;
             let color = colorArray[Math.floor(Math.random() * colorArray.length)];

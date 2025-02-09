@@ -88,9 +88,14 @@ const Roles = () => {
 
 const Students = () => {
   return (
-    <div className="student">
-      <Roles />
-    </div>
+    <>
+      <div className='faculty'>
+        <h2>Student Committee</h2>
+      </div>
+      <div className="student">
+        <Roles />
+      </div>
+    </>
   );
 };
 

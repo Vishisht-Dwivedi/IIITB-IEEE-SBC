@@ -16,6 +16,10 @@ body {
   background-color: rgba(216, 253, 251, 0.717);
 }
 
+section {
+  margin: 2rem 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;

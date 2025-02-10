@@ -9,7 +9,7 @@ canvasArray.forEach((element) => {
     element.height = CANVAS_HEIGHT;
 
     const ctx = element.getContext('2d');
-    const colorArray = ["#A6D9E6", "#8CB6D1", "#F1E6A4", "#D2D8E1", "#C0C0C0"];;
+    const colorArray = ["#A6D9E6", "#8CB6D1", "#F1E6A4", "#D2D8E1", "#C0C0C0"];
     function randomInRange(low, high) {
         return Math.random() * (high - low) + low;
     }

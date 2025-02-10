@@ -1,7 +1,6 @@
 .home {
     width: 100%;
     min-height: 100vh;
-    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,31 +24,109 @@
     height: 100%;
 }
 
+.home-box {
+    max-width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
 .home-text {
-    padding: 15px;
-    max-width: 800px;
-    height: 300px;
-    background: #c4e7fd;
-    border-radius: 30px;
-    text-align: left;
-    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2.5rem 1rem;
+    background: #D6E8F5;
+    border-radius: 2rem 0 0 2rem;
 }
 
 .home-text h1 {
-    margin-left: 20px;
-    color: #4f76b4;
-}
-
-.home-text hr {
-    width: 60%;
-    height: 4px;
-    border: 0 none;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: black;
+    color: #002147;
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0;
+    padding: 0.5rem 0;
 }
 
 .home-text p {
-    color: black;
-    font-size: 20px;
+    color: #002147;
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding: 1.5rem 0;
+    width: 100%;
+    max-height: 100%;
+}
+
+.home-carousel {
+    width: 100%;
+    aspect-ratio: 4/5;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.homeCarousel {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+@media (max-width:1100px) {
+    .home-box {
+        flex-direction: column-reverse;
+        padding: 0.2rem;
+        background-color: transparent;
+        font-size: 13px;
+    }
+
+    .home-carousel {
+        width: 60%;
+        transform: none;
+    }
+
+    .home-text {
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+    }
+
+    .home-carousel h1 {
+        padding: 0.1rem;
+    }
+}
+
+.homeCarousel img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    aspect-ratio: 4/5;
+}
+
+
+.homeCarousel button {
+    all: unset;
+    width: 10%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeCarousel button:hover {
+    background-color: rgba(245, 245, 245, 0.7);
+    cursor: pointer;
+}
+
+.homeCarousel button img {
+    all: unset;
+    width: 80%;
 }

@@ -77,7 +77,7 @@
     left: 10%;
     padding: 1em;
     border-radius: 20px;
-    overflow: none;
+    overflow: hidden;
 }
 
 .eventDescription h2 {
@@ -92,7 +92,6 @@
 }
 
 /* Responsiveness */
-/* Phone */
 @media (max-width: 750px) {
     .SmallSlide {
         width: 60%;
@@ -108,7 +107,7 @@
         right: 15%;
         top: 5%;
         bottom: 0;
-        height: 100%;
+        height: auto;
         font-size: 13px;
     }
 }
@@ -127,7 +126,7 @@
         right: 15%;
         top: 5%;
         bottom: 0;
-        height: 100%;
+        height: auto;
         font-size: 13px;
     }
 }

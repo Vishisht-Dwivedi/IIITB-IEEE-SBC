@@ -1,14 +1,5 @@
 /* Setting the entire section */
-.AboutIIITB {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    background-color: #E6F7FF;
-}
-
+.AboutIIITB,
 .AboutIEEE {
     display: flex;
     flex-direction: column;
@@ -16,6 +7,8 @@
     align-items: center;
     position: relative;
     z-index: 1;
+    width: 100%;
+    padding: 2rem;
 }
 
 /* About IIITB */
@@ -24,10 +17,10 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 80%;
+    width: 90%;
     max-height: 500px;
     aspect-ratio: 16/9;
-    margin: 1rem 15%;
+    margin: 1rem auto;
     box-shadow: 10px 10px 15px 1px rgb(196, 196, 196);
 }
 
@@ -39,57 +32,78 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+    padding: 1rem;
 }
 
 .iiitb img {
     width: 15%;
+    max-width: 100px;
 }
 
 .label {
     width: 100%;
-    height: 50%;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.6);
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
     padding: 2%;
     margin: 2%;
-    font-size: 18px;
-}
-
-@media (max-width: 1000px) {
-    .label {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 800px) {
-    .label {
-        font-size: 13px;
-    }
+    font-size: 1rem;
 }
 
 .label p {
     margin: 0;
     text-align: center;
     padding: 1%;
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: 'Playfair';
+    font-weight: 550;
+    color: rgb(3, 3, 62);
+}
+
+@media (max-width: 1000px) {
+    .label {
+        font-size: 0.9rem;
+    }
+
+    .iiitb img {
+        width: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .label {
+        font-size: 0.8rem;
+    }
+
+    .iiitb {
+        width: 95%;
+    }
+
+    .iiitb img {
+        width: 25%;
+    }
 }
 
 /* About IEEE */
 .IEEE {
     width: 100%;
     min-height: 300px;
-    display: grid;
-    grid-template-columns: 30% 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
 }
 
 .IEEELogoWrapper {
-    width: 100%;
-    display: grid;
-    place-items: center;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
@@ -100,10 +114,12 @@ canvas {
     width: 100%;
     height: 100%;
     z-index: -1;
+    object-fit: cover;
 }
 
 .IEEE img {
     width: 100%;
+    max-width: 150px;
 }
 
 .logoBG {
@@ -112,7 +128,6 @@ canvas {
     padding: 5%;
     border-radius: 50%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: transparent;
@@ -120,41 +135,46 @@ canvas {
 }
 
 .IEEE_Text {
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .IEEE_Text p {
-    padding: 3rem;
+    padding: 2rem;
     color: black;
-    font-size: 2em;
+    font-size: 1.5rem;
 }
 
 /* About Computer Society */
 .IEEE_CS {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .IEEE_CS img {
     width: 100%;
+    max-width: 200px;
 }
 
-/* Font Sizing */
-.IEEE_CS,
-.IEEE {
-    font-size: 14px;
-    margin: 2rem;
-}
-
+/* Font Sizing Adjustments */
 @media (max-width: 1000px) {
 
     .IEEE_CS,
     .IEEE {
-        font-size: 13px;
+        font-size: 0.9rem;
+    }
+
+    .IEEE_Text p {
+        font-size: 1.2rem;
+        padding: 1.5rem;
     }
 }
 
@@ -162,6 +182,11 @@ canvas {
 
     .IEEE_CS,
     .IEEE {
-        font-size: 10px;
+        font-size: 0.8rem;
+    }
+
+    .IEEE_Text p {
+        font-size: 1rem;
+        padding: 1rem;
     }
 }

@@ -26,12 +26,12 @@
 
 .home-box {
     max-width: 60%;
+    min-width: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
 }
-
 
 .home-text {
     width: 100%;
@@ -42,7 +42,7 @@
 }
 
 .home-text h1 {
-    color: #002147;
+    color: #0752a7;
     font-size: 2em;
     line-height: 1.2;
     font-weight: 700;
@@ -65,6 +65,7 @@
     z-index: 2;
     overflow: hidden;
     border-radius: 1rem;
+    min-width: 300px;
 }
 
 .homeCarousel {
@@ -80,11 +81,11 @@
         flex-direction: column-reverse;
         padding: 0.2rem;
         background-color: transparent;
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .home-carousel {
-        width: 60%;
+        width: 70%;
         transform: none;
     }
 
@@ -98,6 +99,20 @@
     }
 }
 
+@media (max-width: 768px) {
+    .home-text h1 {
+        font-size: 1.5em;
+    }
+
+    .home-text p {
+        font-size: 1em;
+    }
+
+    .home-carousel {
+        width: 90%;
+    }
+}
+
 .homeCarousel img {
     object-fit: fill;
     width: 100%;
@@ -106,8 +121,8 @@
     flex-shrink: 0;
     flex-grow: 0;
     aspect-ratio: 4/5;
+    transition: all 500ms;
 }
-
 
 .homeCarousel button {
     all: unset;

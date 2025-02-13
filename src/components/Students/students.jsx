@@ -5,17 +5,17 @@ import m2 from '../../assets/m2.jpg';
 const teamArray = [
   {
     role: "Chairperson",
-    name: "Sameer",
+    name: "Pareeshi",
     key: 1
   },
   {
     role: "Secretary",
-    name: "Faeez",
+    name: "Sameer",
     key: 2
   },
   {
     role: "Vice-Chairperson",
-    name: "Pareeshi",
+    name: "Faeez",
     key: 3
   },
   {
@@ -24,29 +24,34 @@ const teamArray = [
     key: 4
   },
   {
-    role: "Web-Master",
-    name: "Priya",
+    role: "Treasurer",
+    name: "Amay",
     key: 5
   },
   {
     role: "Web-Master",
-    name: "Vishisht",
+    name: "Priya",
     key: 6
+  },
+  {
+    role: "Web-Master",
+    name: "Vishisht",
+    key: 7
   },
   {
     role: "Event-Coordinator",
     name: "Mridu",
-    key: 7
+    key: 8
   },
   {
     role: "Design-Coordinator",
     name: "Shubhojeet",
-    key: 8
+    key: 9
   },
   {
     role: "Social-Media",
     name: "Pranith",
-    key: 9
+    key: 10
   }
 ];
 
@@ -79,8 +84,8 @@ const Roles = () => {
         ref={(el) => (imgRefs.current[index] = el)}
       />
       <div className="studentInside">
-        <h3>{student.name}</h3>
-        <h3>{student.role}</h3>
+        <h5>{student.name}</h5>
+        <h5>{student.role}</h5>
       </div>
     </div>
   ));

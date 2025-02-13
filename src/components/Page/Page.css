@@ -6,10 +6,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 2rem;
 }
 
 .Pages img {
     width: 600px;
+    max-width: 90%;
 }
 
 .Pages h1 {
@@ -28,26 +31,60 @@
         letter-spacing: 5px;
         opacity: 0;
     }
+
     30% {
         letter-spacing: 25px;
         opacity: 1;
     }
+
     70% {
         letter-spacing: 12px;
         margin-top: 0px;
     }
+
     100% {
         letter-spacing: 8px;
         margin-top: 0px;
     }
 }
 
-.Pages h2 {
+.Pages h2,
+.Pages h3 {
     color: #00629B;
     font-size: 40px;
 }
 
-.Pages h3 {
-    color: #00629B;
-    font-size: 40px;
+@media (max-width: 1024px) {
+    .Pages h1 {
+        font-size: 50px;
+    }
+
+    .Pages h2,
+    .Pages h3 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Pages h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    .Pages h2,
+    .Pages h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Pages h1 {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .Pages h2,
+    .Pages h3 {
+        font-size: 25px;
+    }
 }

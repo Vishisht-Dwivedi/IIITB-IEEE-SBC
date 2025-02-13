@@ -3,6 +3,8 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 2rem;
 }
 
 .team {
@@ -12,7 +14,6 @@
     justify-content: center;
 }
 
-
 .faculty {
     display: flex;
     align-items: center;
@@ -20,17 +21,18 @@
     height: 3rem;
     margin-top: 1rem;
     font-size: 1.8rem;
+    text-align: center;
 }
 
 .imgs {
     flex: 1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 30px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
-
 
 .img {
     width: 300px;
@@ -38,4 +40,49 @@
     background: pink;
     padding: 1em;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .faculty {
+        font-size: 1.5rem;
+    }
+
+    .img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faculty {
+        font-size: 1.2rem;
+    }
+
+    .imgs {
+        gap: 20px;
+        row-gap: 10px;
+    }
+
+    .img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faculty {
+        font-size: 1rem;
+    }
+
+    .imgs {
+        row-gap: 5px;
+    }
+
+    .img {
+        width: 150px;
+        height: 150px;
+    }
 }

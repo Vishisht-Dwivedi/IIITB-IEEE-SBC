@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 * {
   padding: 0;
@@ -12,12 +13,21 @@
   font-style: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Mono";
+}
+
 body {
   background-color: rgba(216, 253, 251, 0.717);
 }
 
 section {
-  margin: 2rem 0;
+  margin: 5% 0;
 }
 
 a {
@@ -30,6 +40,7 @@ a {
 .container {
   padding-left: 1%;
   padding-right: 1%;
+  margin: 0 auto;
 }
 
 .Heading {
@@ -46,4 +57,32 @@ a {
   border-radius: 20px;
   padding: 0 10px;
   border-bottom: 5px solid orange;
+}
+
+nav {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .Heading h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .Heading h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Heading h1 {
+    font-size: 1.5rem;
+    border-bottom: 3px solid orange;
+  }
 }

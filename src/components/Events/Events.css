@@ -1,18 +1,24 @@
 .Events {
-    height: 600px;
     padding: 0 1em 1em;
-    margin: 0;
+    margin: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    aspect-ratio: 19/9;
 }
 
 
 /* Responsiveness */
 @media (max-width: 900px) {
     .Events {
-        height: 400px;
         font-size: 13px;
+        aspect-ratio: 16/9;
+    }
+}
+
+@media (max-width: 750px) {
+    .Events {
+        aspect-ratio: 5/4;
     }
 }

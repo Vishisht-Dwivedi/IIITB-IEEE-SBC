@@ -18,7 +18,6 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 90%;
-    max-height: 500px;
     aspect-ratio: 16/9;
     margin: 1rem auto;
     box-shadow: 10px 10px 15px 1px rgb(196, 196, 196);
@@ -38,7 +37,7 @@
 
 .iiitb img {
     width: 15%;
-    max-width: 100px;
+    max-width: 150px;
 }
 
 .label {

@@ -12,11 +12,12 @@ const Navbar = () => {
       <img src={logo} alt='Logo' className='logo' />
 
       <ul className={menuOpen ? 'nav-links open' : 'nav-links'}>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Events</li>
-        <li>Team</li>
-        <li>Contact Us</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#AboutIIITB">IIIT Bhopal</a></li>
+        <li><a href="#AboutIEEE">IEEE</a></li>
+        <li><a href="#Events">Events</a></li>
+        <li><a href="#Teams">Team</a></li>
+        <li><a href="#Joins">Contact Us</a></li>
       </ul>
 
       <img src={logo1} alt='Logo1' className='logo1' />
@@ -31,7 +32,8 @@ const Navbar = () => {
         </button>
         <ul>
           <li onClick={() => setMenuOpen(false)}>Home</li>
-          <li onClick={() => setMenuOpen(false)}>About Us</li>
+          <li onClick={() => setMenuOpen(false)}>IIIT Bhopal</li>
+          <li onClick={() => setMenuOpen(false)}>IEEE</li>
           <li onClick={() => setMenuOpen(false)}>Events</li>
           <li onClick={() => setMenuOpen(false)}>Team</li>
           <li onClick={() => setMenuOpen(false)}>Contact Us</li>

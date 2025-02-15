@@ -6,9 +6,9 @@ import m3 from '../../assets/m3.jpg'
 
 const Teams = () => {
   return (
-    <section className='Teams'>
+    <section className='Teams' id="Teams">
       <div className='Heading'>
-        <h1>Meet the team</h1>
+        <h2>Meet the team</h2>
       </div>
       <div className='faculty'>
         <h2>Faculty Members</h2>

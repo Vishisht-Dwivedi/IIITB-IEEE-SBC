@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -45,12 +49,11 @@ a {
 
 .Heading {
   text-align: center;
-  height: 3.5rem;
   box-sizing: border-box;
   margin-bottom: 1em;
 }
 
-.Heading h1 {
+.Heading h2 {
   display: inline;
   font-size: 3rem;
   color: orange;

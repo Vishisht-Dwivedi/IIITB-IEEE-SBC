@@ -4,9 +4,9 @@ import Carousel from './Carousel.jsx'
 
 const Events = () => {
   return (
-    <section className="Events">
+    <section className="Events" id="Events">
       <div className="Heading">
-        <h1>Events</h1>
+        <h2>Events</h2>
       </div>
       <div className="eventCarousel">
         <Carousel />

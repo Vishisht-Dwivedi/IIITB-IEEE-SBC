@@ -23,19 +23,13 @@ const About = () => {
 
     // Load your external script here
     loadScript('/src/assets/PhyBalls.js')
-      .then(() => {
-        console.log("okay");
-      })
-      .catch((error) => {
-        console.error('Error loading external script:', error);
-      });
   }, []);
 
   return (
     <>
-      <section className="AboutIIITB">
+      <section className="AboutIIITB" id="AboutIIITB">
         <div className="Heading">
-          <h1>About IIIT Bhopal</h1>
+          <h2>About IIIT Bhopal</h2>
         </div>
         <div className="iiitb">
           <div className="iiitb-wrapper">
@@ -60,10 +54,10 @@ const About = () => {
         </div>
       </section>
       {/* IEEE */}
-      <section className="AboutIEEE">
+      <section className="AboutIEEE" id="AboutIEEE">
         <canvas ref={canvasRef} className='canvas' />
         <div className="Heading">
-          <h1>IEEE</h1>
+          <h2>IEEE</h2>
         </div>
         <div className="IEEE">
           <div className="IEEELogoWrapper">
@@ -82,7 +76,7 @@ const About = () => {
 
         {/* Computer Society */}
         <div className="Heading">
-          <h1>IEEE Computer Society</h1>
+          <h2>IEEE Computer Society</h2>
         </div>
         <div className="IEEE_CS">
           <div className="IEEE_Text">

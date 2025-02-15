@@ -9,7 +9,7 @@ import { TbBrandYoutubeFilled } from "react-icons/tb";
 
 const Footer = () => {
     return (
-        <footer className='footer'>
+        <footer>
             <div className='sec1'>
                 <div className='tag'>
                     <img src={logo}></img>

@@ -1,8 +1,8 @@
-.footer {
+footer {
     width: 100%;
     height: auto;
     min-height: 150px;
-    padding: 40px 0;
+    padding: 3rem 1.5rem;
     background: #1d99cc;
     display: grid;
     grid-template-columns: repeat(4, 1fr);

@@ -1,10 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import './About.css';
 import cs from '../../assets/logos/cs.webp';
-import golden from '../../assets/golden.webp';
 import iiitb from '../../assets/logos/iiitb.png';
 import logo from '../../assets/logos/logo.png';
-import inog from '../../assets/inog.jpg';
 
 const About = () => {
   const canvasRef = useRef(null);
@@ -35,20 +33,18 @@ const About = () => {
           <div className="iiitb-wrapper">
             <img src={iiitb} alt="" />
             <div className="label">
-              <p>
-                Indian Institute of Information Technology Bhopal is an Institute
-                of National Importance, established in 2017 under the
-                Public-Private Partnership (PPP) model. It focuses on quality
-                education, research, and technological innovation. The institute
-                fosters a dynamic learning environment with industry collaborations
-                and cutting-edge infrastructure. Currently operating from MANIT
-                Bhopal, it aims to equip students with advanced technical knowledge
-                and problem-solving skills. With a strong emphasis on academic
-                excellence and practical learning, IIIT Bhopal prepares individuals
-                for careers in technology, entrepreneurship, and research,
-                contributing to the nation's digital growth and innovation-driven
-                economy.
-              </p>
+              <ul>
+                <li>📍 Established: 2017</li>
+                <li> 🏛 Institute Type: Institute of National Importance</li>
+                <li> 📚 Programs: B.Tech in CSE, ECE, and IT</li>
+              </ul>
+              <p>The Indian Institute of Information Technology Bhopal (IIIT Bhopal) is one of the IIITs established under the Public-Private Partnership (PPP) model by the Government of India. It aims to nurture excellence in engineering, research, and innovation in the fields of Computer Science, Electronics, and Information Technology.</p>
+              <ul>
+                <li>🔹 <strong>Mission:</strong> To produce highly skilled professionals equipped to tackle modern technological challenges</li>
+                <li>🔹 <strong>Collaborations:</strong> Strong industry and academic partnerships to enhance student opportunities.</li>
+                <li>🔹 <strong>Campus Life:</strong> A dynamic student community with technical clubs, hackathons, and research opportunities.</li>
+              </ul>
+              <p>With a commitment to innovation, entrepreneurship, and academic excellence, IIIT Bhopal continues to grow as a hub for future tech leaders.</p>
             </div>
           </div>
         </div>

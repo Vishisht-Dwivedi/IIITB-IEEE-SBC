@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: 5fr 5fr;
     gap: 5%;
-    background: rgb(91, 91, 255);
+    background: linear-gradient(#0575E6, #5b76ff);
     padding: 1.5em;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .details {
-    color: #fff;
+    color: #F8F9FA;
     display: grid;
     grid-template-rows: 1.2fr repeat(3, 1fr) 3fr 1fr;
 }
@@ -78,14 +78,14 @@
 }
 
 .form h2 {
-    color: #fff;
+    color: #F8F9FA;
     font-size: 3em;
     font-weight: 400;
 }
 
 .name {
     width: 100%;
-    color: #fff;
+    color: #F8F9FA;
 }
 
 .name input {
@@ -99,7 +99,7 @@
 }
 
 input {
-    color: white;
+    color: #F8F9FA;
 }
 
 .name input::placeholder,
@@ -121,23 +121,26 @@ input {
     outline: none;
     font-size: 1em;
     padding-left: 1.4em;
-    color: white;
+    color: #F8F9FA;
 }
 
 .form .btn {
     width: 100%;
     height: 3em;
-    background-color: rgb(255, 104, 34);
+    background-color: #E65C00;
     border: none;
     outline: none;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 400;
     cursor: pointer;
+    max-width: 250px;
+    margin: auto;
+    padding: 0.2em 0.5em;
 }
 
 .btn a {
     text-decoration: none;
-    color: #fff;
+    color: #F8F9FA;
 }
 
 .join {
@@ -155,7 +158,7 @@ input {
     height: 4rem;
     border-radius: 4rem;
     font-weight: 500;
-    color: #fff;
+    color: #F8F9FA;
     background: orange;
 }
 

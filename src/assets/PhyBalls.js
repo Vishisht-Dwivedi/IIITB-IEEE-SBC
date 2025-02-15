@@ -7,7 +7,7 @@ canvas.width = CANVAS_WIDTH;
 canvas.height = CANVAS_HEIGHT;
 
 const ctx = canvas.getContext('2d');
-const colorArray = ["rgba(255, 218, 95, 0.7)", "rgba(255, 239, 200, 0.7)", "rgba(184, 213, 118, 0.7)", "rgba(54, 115, 181, 0.7)", "rgba(209, 248, 239, 0.7)"];
+const colorArray = ["rgba(255, 218, 95, 0.5)", "rgba(255, 239, 200, 0.5)", "rgba(184, 213, 118, 0.5)", "rgba(54, 115, 181, 0.5)", "rgba(209, 248, 239, 0.5)"];
 
 function randomInRange(low, high) {
     return Math.random() * (high - low) + low;

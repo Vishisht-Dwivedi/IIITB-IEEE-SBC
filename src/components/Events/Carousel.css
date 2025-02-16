@@ -17,7 +17,7 @@
     flex-shrink: 0;
     flex-grow: 0;
     transition: 800ms;
-    filter: blur(10px);
+    filter: blur(2px);
 }
 
 /* Small Slide */

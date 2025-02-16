@@ -3,7 +3,10 @@ footer {
     height: auto;
     min-height: 150px;
     padding: 3rem 1.5rem;
-    background: #1d99cc;
+    background: url('../../assets/sectionTransitions/wave-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 180px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;

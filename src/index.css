@@ -27,7 +27,7 @@ h6 {
 }
 
 body {
-  background-color: rgba(216, 253, 251, 0.717);
+  background-color: #d8fdfbb7;
 }
 
 section {
@@ -50,16 +50,20 @@ a {
 .Heading {
   text-align: center;
   box-sizing: border-box;
+  padding: 0.2em 0.5em;
   margin-bottom: 1em;
 }
+
 
 .Heading h2 {
   display: inline;
   font-size: 3rem;
-  color: orange;
   border-radius: 20px;
   padding: 0 10px;
-  border-bottom: 5px solid orange;
+  background: linear-gradient(45deg, #ff8000, #ffa333);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 nav {
@@ -67,7 +71,7 @@ nav {
 }
 
 @media (max-width: 1024px) {
-  .Heading h1 {
+  .Heading h2 {
     font-size: 2.5rem;
   }
 }
@@ -78,13 +82,13 @@ nav {
     padding-right: 3%;
   }
 
-  .Heading h1 {
+  .Heading h2 {
     font-size: 2.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .Heading h1 {
+  .Heading h2 {
     font-size: 1.5rem;
     border-bottom: 3px solid orange;
   }

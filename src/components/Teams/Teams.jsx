@@ -3,27 +3,16 @@ import './Teams.css'
 import m1 from '../../assets/m1.jpg'
 import m2 from '../../assets/m2.jpg'
 import m3 from '../../assets/m3.jpg'
-
+import Students from './students.jsx';
+import Faculty from './faculty.jsx';
 const Teams = () => {
   return (
     <section className='Teams' id="Teams">
       <div className='Heading'>
         <h2>Meet the team</h2>
       </div>
-      <div className='faculty'>
-        <h2>Faculty Members</h2>
-      </div>
-      <div className='imgs'>
-        <div className='img m1'>
-          <img src='m1' alt='' />
-        </div>
-        <div className='img m2'>
-          <img src='m1' alt='' />
-        </div>
-        <div className='img m3'>
-          <img src='m1' alt='' />
-        </div>
-      </div>
+      <Faculty />
+      <Students />
     </section>
 
   )

@@ -26,7 +26,10 @@ const Carousel = () => {
     });
     return (
         <div className="eventCarousel">
-            {imgArr}
+            <canvas className="canvas"></canvas>
+            <div className="carouselBG">
+                {imgArr}
+            </div>
             <div className="eventDescription">
                 <h2>
                     {eventsArray[ImgIndex].headline}

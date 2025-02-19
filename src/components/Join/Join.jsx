@@ -44,7 +44,7 @@ const Join = () => {
           <div className='name'><input type="text" placeholder="Your Name" required></input></div>
           <div className='name'><input type="email" placeholder="Your Email" required></input></div>
           <div className='msg'><textarea placeholder="Message" ></textarea></div>
-          <button type="button" className="btn"><a href="#">SEND MESSAGE</a></button>
+          <button type="button" className="btn"><a href="#">Send Message</a></button>
         </div>
       </div>
     </section>

@@ -8,9 +8,7 @@ const Events = () => {
       <div className="Heading">
         <h2>Events</h2>
       </div>
-      <div className="eventCarousel">
-        <Carousel />
-      </div>
+      <Carousel />
     </section>
   )
 }

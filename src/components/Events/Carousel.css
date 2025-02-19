@@ -1,37 +1,58 @@
 .eventCarousel {
     overflow: hidden;
-    height: 100%;
+    height: 500px;
+    width: 100%;
     margin: 1em 0;
-    position: relative;
-    padding: 0;
+    padding: 5% 2% 1% 5%;
     margin: 0;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: 4fr 2.5fr;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2),
+        0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
-.eventCarousel img {
+.eventCarousel canvas {
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    filter: blur(1px);
+}
+
+.carouselBG {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    mix-blend-mode: darken;
+}
+
+.carouselBG img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     display: block;
     flex-shrink: 0;
     flex-grow: 0;
-    transition: 800ms;
     filter: blur(2px);
+    transition: translate 600ms;
 }
+
 
 /* Small Slide */
 .SmallSlide {
-    position: absolute;
-    right: 5%;
-    bottom: 10%;
-    width: 30%;
-    aspect-ratio: 16/9;
+    position: relative;
     background: teal;
     display: flex;
     flex-direction: row;
     overflow: hidden;
     border-radius: 5px;
+    aspect-ratio: 16/9;
+    align-self: end;
+    z-index: 2;
 }
 
 .SmallSlide img {
@@ -42,6 +63,7 @@
     flex-shrink: 0;
     flex-grow: 0;
     filter: blur(0);
+    transition: translate 800ms;
 }
 
 .SmallSlide button {
@@ -55,12 +77,15 @@
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(5px);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .SmallSlide button:hover {
     background-color: rgba(245, 245, 245, 0.7);
     cursor: pointer;
+    transform: scale(1.1);
 }
+
 
 .SmallSlide button img {
     all: unset;
@@ -69,65 +94,28 @@
 
 /* Event Description div */
 .eventDescription {
-    background-color: rgba(255, 255, 255, 0.7);
-    width: 50%;
-    height: 80%;
-    position: absolute;
     bottom: 0;
     left: 10%;
-    padding: 1em;
+    padding: 1.5em;
     border-radius: 20px;
     overflow: hidden;
+    z-index: 1;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .eventDescription h2 {
     text-align: center;
     font-size: 2em;
     color: #00629B;
+    margin-bottom: 0.5em;
 }
 
 .eventDescription p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     text-align: center;
     font-weight: 500;
-}
-
-/* Responsiveness */
-@media (max-width: 750px) {
-    .SmallSlide {
-        width: 60%;
-        height: 40%;
-        left: 20%;
-        right: 20%;
-        bottom: 2%;
-    }
-
-    .eventDescription {
-        width: 70%;
-        left: 15%;
-        right: 15%;
-        top: 5%;
-        bottom: 0;
-        height: auto;
-        font-size: 13px;
-    }
-}
-
-@media (min-width: 750px) and (max-width: 900px) {
-    .SmallSlide {
-        width: 40%;
-        left: 30%;
-        right: 30%;
-        bottom: 2%;
-    }
-
-    .eventDescription {
-        width: 70%;
-        left: 15%;
-        right: 15%;
-        top: 5%;
-        bottom: 0;
-        height: auto;
-        font-size: 13px;
-    }
+    line-height: 1.5;
+    max-width: 90%;
+    margin: 0 auto;
 }

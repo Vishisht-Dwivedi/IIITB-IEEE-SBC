@@ -5,24 +5,6 @@ import iiitb from '../../assets/logos/iiitb.png';
 import logo from '../../assets/logos/logo.png';
 
 const About = () => {
-  const canvasRef = useRef(null);
-
-  useEffect(() => {
-    const loadScript = (src) => {
-      return new Promise((resolve, reject) => {
-        const script = document.createElement('script');
-        script.src = src;
-        script.async = true;
-        script.onload = () => resolve();
-        script.onerror = (error) => reject(error);
-        document.body.appendChild(script);
-      });
-    };
-
-    // Load your external script here
-    loadScript('/src/assets/PhyBalls.js')
-  }, []);
-
   return (
     <>
       <section className="AboutIIITB" id="AboutIIITB">
@@ -51,7 +33,7 @@ const About = () => {
       </section>
       {/* IEEE */}
       <section className="AboutIEEE" id="AboutIEEE">
-        <canvas ref={canvasRef} className='canvas' />
+        <canvas className='canvas' />
         <div className="Heading">
           <h2>IEEE</h2>
         </div>

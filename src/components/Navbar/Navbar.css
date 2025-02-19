@@ -24,9 +24,16 @@ nav {
 }
 
 .nav-links li {
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 500;
     cursor: pointer;
+    padding: 0.3em;
+    border-bottom: 2px solid transparent;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-links li:hover {
+    border-bottom: 2px solid orange;
 }
 
 .menu-btn {

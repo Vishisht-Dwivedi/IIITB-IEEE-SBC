@@ -56,7 +56,7 @@ const teamArray = [
 const Students = () => {
   return (
     <>
-      <div className='faculty'>
+      <div className='teams-subheading'>
         <h2>Student Committee</h2>
       </div>
       <div className="student">

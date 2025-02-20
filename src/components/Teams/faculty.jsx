@@ -20,14 +20,14 @@ const teamArray = [
 ];
 const Faculty = () => {
     return (
-        <>
-            <div className='faculty'>
+        <div className="Faculty">
+            <div className='teams-subheading'>
                 <h2>Faculty Co-ordinators</h2>
             </div>
             <div className="student">
                 <Roles teamArray={teamArray} />
             </div>
-        </>
+        </div>
     );
 };
 

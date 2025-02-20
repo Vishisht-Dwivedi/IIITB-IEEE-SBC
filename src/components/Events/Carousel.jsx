@@ -4,6 +4,7 @@ import img1 from '../../assets/iiitbopal.png'
 import img2 from '../../assets/inog.jpg'
 import next from '../../assets/buttons/next.svg'
 import back from '../../assets/buttons/back.svg'
+import PhyBalls from '../../components/About/PhyBalls.jsx'
 const eventsArray = [{
     id: 1,
     headline: "Hackathons",
@@ -26,7 +27,7 @@ const Carousel = () => {
     });
     return (
         <div className="eventCarousel">
-            <canvas className="canvas"></canvas>
+            <PhyBalls />
             <div className="carouselBG">
                 {imgArr}
             </div>

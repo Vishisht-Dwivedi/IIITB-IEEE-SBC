@@ -1,7 +1,6 @@
 import React from 'react'
 import './Events.css'
 import Carousel from './Carousel.jsx'
-
 const Events = () => {
   return (
     <section className="Events" id="Events">
@@ -12,5 +11,4 @@ const Events = () => {
     </section>
   )
 }
-
 export default Events

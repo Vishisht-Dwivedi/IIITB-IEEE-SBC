@@ -3,6 +3,7 @@ import './About.css';
 import cs from '../../assets/logos/cs.webp';
 import iiitb from '../../assets/logos/iiitb.png';
 import logo from '../../assets/logos/logo.png';
+import PhyBalls from './PhyBalls.jsx'
 
 const About = () => {
   return (
@@ -33,7 +34,7 @@ const About = () => {
       </section>
       {/* IEEE */}
       <section className="AboutIEEE" id="AboutIEEE">
-        <canvas className='canvas' />
+        <PhyBalls />
         <div className="Heading">
           <h2>IEEE</h2>
         </div>

@@ -19,26 +19,6 @@ const upcomingEvents = [{
   img: comingSoon
 }];
 
-const Home = () => {
-  const [ImgIndex, setImgIndex] = useState(0);
-  return (
-    <section className='home' style={{ marginTop: 0 }}>
-      <div className="home-background">
-        <img src={background} alt="BG-Img" />
-      </div>
-      <div className='home-box'>
-        <div className='home-text'>
-          <h1>{upcomingEvents[ImgIndex].headline}</h1>
-          <p>{upcomingEvents[ImgIndex].description}</p>
-        </div>
-        <div className="home-carousel">
-          <HomeCarouselImages ImgIndex={ImgIndex} setImgIndex={setImgIndex} />
-        </div>
-      </div>
-    </section>
-  )
-}
-
 const HomeCarouselImages = ({ ImgIndex, setImgIndex }) => {
   const imgArr = upcomingEvents.map(({ img, id }, index) => {
     return (
@@ -70,6 +50,26 @@ const HomeCarouselImages = ({ ImgIndex, setImgIndex }) => {
         <img src={next} alt="" />
       </button>
     </div>
+  )
+}
+
+const Home = () => {
+  const [ImgIndex, setImgIndex] = useState(0);
+  return (
+    <section className='home' style={{ marginTop: 0 }}>
+      <div className="home-background">
+        <img src={background} alt="BG-Img" />
+      </div>
+      <div className='home-box'>
+        <div className='home-text'>
+          <h1>{upcomingEvents[ImgIndex].headline}</h1>
+          <p>{upcomingEvents[ImgIndex].description}</p>
+        </div>
+        <div className="home-carousel">
+          <HomeCarouselImages ImgIndex={ImgIndex} setImgIndex={setImgIndex} />
+        </div>
+      </div>
+    </section>
   )
 }
 

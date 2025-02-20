@@ -90,6 +90,5 @@ nav {
 @media (max-width: 480px) {
   .Heading h2 {
     font-size: 1.5rem;
-    border-bottom: 3px solid orange;
   }
 }

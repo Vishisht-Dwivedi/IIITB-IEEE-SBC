@@ -1,7 +1,6 @@
 import React from "react";
 import { useRef, useEffect } from "react";
 import m2 from '../../assets/m2.jpg';
-
 const Roles = ({ teamArray }) => {
     // Got the intersection observer code from MDN...dont know exactly how it works
     const imgRefs = useRef([]);
@@ -23,16 +22,18 @@ const Roles = ({ teamArray }) => {
     }, []);
     //My code starts here
     return teamArray.map((student, index) => (
-        <div className="students" key={student.key}>
-            <img
-                src={m2}
-                className="animations"
-                alt=""
-                ref={(el) => (imgRefs.current[index] = el)}
-            />
-            <div className="studentInside">
-                <h5>{student.name}</h5>
-                <h5>{student.role}</h5>
+        <div className="cardWrapper" key={student.key}>
+            <div className="students">
+                <img
+                    src={m2}
+                    className="animations"
+                    alt=""
+                    ref={(el) => (imgRefs.current[index] = el)}
+                />
+                <div className="studentInside">
+                    <h5>{student.name}</h5>
+                    <h5>{student.role}</h5>
+                </div>
             </div>
         </div>
     ));

@@ -1,118 +1,51 @@
 footer {
-    width: 100%;
-    height: auto;
-    min-height: 150px;
-    padding: 3rem 1.5rem;
     background: url('../../assets/sectionTransitions/wave-haikei.svg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 170px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    text-align: left;
     color: #fff;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.sec1 img {
-    width: 180px;
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
 }
 
-.sec1 h2 {
-    font-size: 1.8em;
+footer div img {
+    max-width: 180px;
+    filter: brightness(0) invert(1);
 }
 
-.sec1 h3 {
-    font-size: 1.2em;
+footer div h2 {
+    margin: 1rem 0;
 }
 
-.sec1 p {
-    font-size: 0.9em;
-    font-weight: 600;
+footer div a {
+    margin: 0.5rem;
 }
 
 .social-icons {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     margin-top: 15%;
 }
 
-.sec2 a {
-    text-decoration: underline;
+
+.credits {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    background-color: #1d99cc;
+    color: white;
 }
 
-.sec2 ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sec2 h3 {
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-size: 1.4em;
-}
-
-.sec2 ul li {
-    margin-bottom: 5px;
-}
-
-.sec3 a {
-    text-decoration: underline;
-}
-
-.sec3 ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sec3 h3 {
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-size: 1.4em;
-}
-
-.sec3 ul li {
-    margin-bottom: 5px;
-}
-
-.sec4 a {
-    text-decoration: underline;
-}
-
-.sec4 ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sec4 ul li {
-    margin-bottom: 5px;
-}
-
-.sec4 h3 {
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-size: 1.4em;
-}
-
-@media (max-width: 1024px) {
-    .footer {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .footer {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 10px;
-        padding: 20px;
-    }
-
-    .social-icons {
-        justify-content: center;
-    }
-
-    .sec1 img {
-        width: 150px;
-    }
+.credits p {
+    margin: 0 1rem;
 }

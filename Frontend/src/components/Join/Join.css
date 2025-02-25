@@ -1,0 +1,204 @@
+.Joins {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+}
+
+.form_wrapper {
+    width: 80%;
+    aspect-ratio: 16/7;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    gap: 5%;
+    background: linear-gradient(180deg, #90e0ef, #0077b6);
+    padding: 1.5em;
+}
+
+.error {
+    color: white;
+}
+
+.details div {
+    display: flex;
+    align-items: center;
+}
+
+.details {
+    color: #023E8A;
+    display: grid;
+    grid-template-rows: 1.2fr repeat(3, 1fr) 3fr 1fr;
+}
+
+.details h2 {
+    font-size: 3em;
+    font-weight: 600;
+    color: #013A63;
+}
+
+.media {
+    font-size: 1em;
+}
+
+.media a {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    gap: 2px;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.media a svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.icon {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icon svg:hover {
+    filter: brightness(1.5);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
+
+/* Left Side */
+
+.form {
+    display: grid;
+    grid-template-rows: 1.2fr 1fr 1fr 3fr 1fr;
+}
+
+.form h2 {
+    font-size: 3em;
+    font-weight: 600;
+    color: #013A63;
+}
+
+.name {
+    width: 100%;
+    color: #023E8A;
+}
+
+.name input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    font-size: 1em;
+    padding: 1.4em 3em 1.4em 1.4em;
+}
+
+input {
+    color: #023E8A;
+}
+
+.name input::placeholder,
+.msg textarea::placeholder {
+    color: #023E8A;
+    opacity: 1;
+}
+
+.msg {
+    width: 100%;
+    padding: 1.4em 0 0 0;
+}
+
+.msg textarea {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding-left: 1.4em;
+    color: #023E8A;
+}
+
+.form .btn {
+    width: 100%;
+    height: 3em;
+    background-color: #FF7F00;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    font-weight: 400;
+    cursor: pointer;
+    max-width: 250px;
+    margin: auto;
+    padding: 0.2em 0.5em;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #2D2D2D;
+}
+
+.join {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join button {
+    border: 0;
+    outline: 0;
+    font-size: 1.5rem;
+    width: 25%;
+    height: 4rem;
+    border-radius: 4rem;
+    font-weight: 500;
+    color: #F8F9FA;
+    background: orange;
+}
+
+@media (max-width:1000px) {
+    .Joins {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .form_wrapper {
+        width: 90%;
+        grid-template-columns: 1fr;
+        aspect-ratio: auto;
+    }
+}
+
+@media (max-width:800px) {
+    .Joins {
+        font-size: 12px;
+    }
+
+    .details h2,
+    .form h2 {
+        font-size: 2em;
+    }
+
+    .join button {
+        width: 50%;
+        font-size: 1.2rem;
+    }
+}
